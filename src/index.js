@@ -24,7 +24,8 @@ import ReactDOM from 'react-dom';
 // import App from './02-advanced/09-倒计时'
 // import App from './02-advanced/10-slot'
 // import App from './02-advanced/test'
-import App from './components/Comment'
+// import App from './components/Comment'
+import App from './App'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -32,5 +33,7 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 );
-
+// setTimeout(() => {
+//   ReactDOM.unmountComponentAtNode(document.querySelector("#root"))
+// }, 2000);
 serviceWorker.unregister();

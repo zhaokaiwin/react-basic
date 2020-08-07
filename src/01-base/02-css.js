@@ -7,7 +7,6 @@ class App extends Component {
             fontSize: '30px'
         }
         return (
-
             <div style={{ background: "pink" }}>{10 + 20}
                 {10 > 20 ? 'aaa' : 'bbb'}
                 <div style={color}>60</div>

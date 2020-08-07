@@ -8,7 +8,6 @@ class App extends Component {
                 通过ref 拿 value
                 */}
                 <input type="text" ref="mytext" />
-
                 <button onClick={() => {
                     console.log(111, this.refs.mytext.value)
                 }}>add1</button>
@@ -16,7 +15,7 @@ class App extends Component {
 
                 <button onClick={
                     this.handleAdd2.bind(this, 'a', 'b')
-                    // 这个是也面加载自动执行一次，第二次就是undefined了,所以再点页面没反应
+                    // 这个是页面加载自动执行一次，第二次就是undefined了,所以再点页面没反应
                     // this.handleAdd2()
                 }>add2</button>
 
@@ -65,6 +64,7 @@ var obj2 = {
         console.log(this.name)
     }
 }
+
 obj1.getName() // obj1  谁调用的this 就指向谁
 obj1.getName.call(obj2, 'aaa', 'bbb', 'ccc') // obj2  改变this指向 立即执行方法 能传n个参数
 obj1.getName.apply(obj2, ['aaa', 'bbb', 'ccc']) // obj2 改变this指向 立即执行方法  只能传数组
@@ -82,10 +82,8 @@ class Test {
     // getName(){
     //     console.log(this.age)
     // }
-
     name = 'kaiwin'
     age = 25
-
     getName = () => {
         console.log(this.name)
     }

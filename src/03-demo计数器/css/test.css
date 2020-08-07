@@ -1,0 +1,9 @@
+.success {
+  color: greenyellow;
+  background: pink;
+}
+.error {
+  color: #fff;
+  font-size: 20px;
+  background: deeppink;
+}
